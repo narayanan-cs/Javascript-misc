@@ -1,0 +1,50 @@
+<html>
+    <head><title>Local Vide Playback</title></head>
+    <body>
+        <img id="draggable" draggable="true" src="download.jfif" style = "position:relative" />
+        
+  <!--    <script src="dragAndDrop.js"></script>-->
+        <script>
+            //addDragEventListener(document.getElementById("dragnDrop"))
+            const el = document.getElementById("draggable");
+            el.addEventListener('drag',(event)=>{
+    
+
+})
+const ele = window.document;
+let offsetX = 0;
+  let offsetY = 0;
+ele.addEventListener("dragover", (event) => {
+  // prevent default to allow drop
+  event.preventDefault();
+  let x= event.clientX
+  let y = event.clientY
+  if(el.style.left !== x  || el.style.top !== y)
+  {
+    
+    move(x - offsetX, y - offsetY)
+    offsetX  = x;offsetY=y;
+  }
+ 
+  
+ 
+}, false);
+ele.addEventListener('drop',(event)=>{
+event.preventDefault();
+// el.style.left = '400px';
+// el.style.top = '500px';
+
+ console.log(el.style.left,el.style.top)
+})
+var move = function (x, y) {
+      var xPos = parseInt(el.style.left) || 0;
+      var yPos = parseInt(el.style.top) || 0;
+
+      el.style.left = (xPos + x) + 'px';
+      el.style.top  = (yPos + y) + 'px';
+    };
+   
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <head><title>Local Vide Playback</title></head>
+    <body>
+        <video id="localVideo" autoplay playsinline controls="false" />
+        <script src="index.js"></script>
+        <script>
+            const cameras = getConnectedDevices("videoinput");
+            if(cameras && cameras.length>0)
+            {
+                const stream = openCamera(cameras[0].deviceId, 1280, 720);
+            }
+            playVideoFromCamera();
+        </script>
+    </body>
+
+</html>

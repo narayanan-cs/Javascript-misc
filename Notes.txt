@@ -1,0 +1,17 @@
+webRTC,
+Drag n Drop 
+
+are there.
+
+Visual reports: Looked at D3.js It is learnt via online editor. 
+Created a histogram using a command
+ Date picker: For each month and year click on DatePicker UI, a Date API can be called which will 
+ provide the dates and can then be fit on datepicker UI
+
+ What OS has to offer:
+ I know what I know
+ OAuth vs OAuth2 : token can be refreshed at short intervals
+ Unicode: I know
+ Visited Javascript.info - It is a JS Tutorial topic wise.
+ jQuery - defines jQuery and then exports jQuery as 
+ window.$ = windows.jQuery
