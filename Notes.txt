@@ -15,3 +15,27 @@ Created a histogram using a command
  Visited Javascript.info - It is a JS Tutorial topic wise.
  jQuery - defines jQuery and then exports jQuery as 
  window.$ = windows.jQuery
+Out of context Regex engine concepts:
+
+
+ *? matches the previous token between zero and unlimited times, as few times as possible, expanding as needed (lazy)
+* matches the previous token between zero and unlimited times, as many times as possible, giving back as needed (greedy)
+? matches the previous token between zero and one times, as many times as possible, giving back as needed (greedy)
+. matches any character (except for line terminators)
+
+.* - all characters
+.?- all cahracters
+.?* - previous token is not qunatifiable
+.*? - all characters
+* - eror
+?- error
+*? - error
+?* - error
+?*. - errpr
+*?. - error
+*.? , ?.*,?*.,*?. - error
+?? matches the previous token between zero and one times, as few times as possible, expanding as needed (lazy)
+.. - 2characters 
+..??
+...??
+??? - error
